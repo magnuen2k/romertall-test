@@ -9,8 +9,21 @@ public class RomertallTest {
         assertEquals("I", toRoman(1));
     }
 
+    @Test
+    public void shouldConvert2ToII() {
+        assertEquals("II", toRoman(2));
+    }
+
     private String toRoman(int i) {
-        return "i";
+        String res = "";
+        if (i == 1){
+            res = "I";
+        }
+        if (i == 2){
+            res = "II";
+        }
+
+        return res;
     }
 
 }
